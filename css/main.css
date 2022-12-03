@@ -1,0 +1,93 @@
+
+.container_container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+}
+.container_category {
+    margin-top: 133px;
+    padding-left: 68px;
+    background-color: rgba(211, 211, 211, 0.199);
+    width: 20%;
+    height: 323px;
+
+}
+.container_category-heading {
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgb(26 1 1 / 72%);
+    margin-left: 26px;
+    margin-bottom: 7px;
+}
+
+.container_category-list {
+    text-align: center;
+    padding-right: 62px;
+
+}
+.container_category-item {
+    list-style: none;
+
+}
+.container_category-item-active {
+
+}
+.container_category-link {
+    line-height: 2;
+    color: #2283bf;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: roboto;
+}
+.container_category-link:hover {
+    color: red;
+    cursor: pointer;
+    background-color: rgba(19, 132, 36, 0.53);  
+    border-radius: 2px;
+   
+}
+.container_category-item {
+
+}
+.container_category-item-font {
+    color: red;
+    font-size: 19px;
+    border-bottom: 1px solid black;
+    padding: 5px 16px;
+    font-family: roboto;
+    text-decoration: none;
+}
+.fa-list::before {
+    content: "\f03a";
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+   top:145px;
+}
+.fa-arrow-down::before {
+    content: "\f063";
+    position: absolute;
+    left: 70px;
+    top: 194px;
+    font-size: 16px;
+    
+}
+.container_img {
+    grid-gap: 0 38px;
+    display: flex;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    padding-top: 183px;
+   background-image: url(../img/Quang_cao/backgroup_quang_cao.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container_img-item-img {
+    width: 31%;
+    height: 97px;
+    cursor: pointer;
+}
+
+
+

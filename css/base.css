@@ -1,0 +1,57 @@
+:root {
+    --white-color:#fff ;
+    --black-color:#000;
+    --text-color:#333;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+body {
+    user-select: none;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+html {
+     
+    font-size: 62.5% ; 
+    font-family:sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    
+}
+
+.grid {
+    width: 1494px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_full-with {
+    width: 100%;
+}
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid_column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grid_column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid_column-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}

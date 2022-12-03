@@ -1,0 +1,250 @@
+.header {
+    height: 133px;
+    background-image: linear-gradient(0, #f73a27, #fe5430);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    
+
+}   
+.header_nav-list {
+    list-style: none;                     
+}
+.header_nav-item {
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+}
+.header_nav-item,
+.header_nav-item-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0px 2px;
+}
+
+.header_nav-item-link :hover {
+    color : rgba(255,255, 255, 0.7);
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(52, 49, 49, 0.405);
+}
+
+.header_nav-item--strong {
+    font-weight: 600;
+}
+.header_nav-item-link--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 2px solid #d7bdbd;
+    height: 12px;
+    left: 181px;
+    top: 12px;
+}
+.header_nav-item-link--separate_1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 2.5px solid #d7bdbd;
+    height: 12px;
+    right: -5px;
+    top: 12px;
+}
+.header_nav-item-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.header_nav-item {
+    color:whitesmoke;
+}
+.fa-facebook::before {
+    content: "";
+    
+}
+.fa-instagram::before {
+    content: "";
+  
+}
+.header_nav-log-img {
+    width: 181px;
+    height: 61px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 48%;
+    left: 89px;
+}
+.header_nav-search-hide-on-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 500px;
+}
+.header_nav_search_input {
+    width: 415%;
+    height: 35px;
+    font-size: 13px;
+    padding: 20px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.header_notify {
+    position: absolute;
+    top: 135%;
+    width: 404px;
+    background-color: var(--white-color);
+    border: 1px solid #d3d3d3;
+    cursor: default;
+    animation: headerNotifyGrow  ease-in 0.2s;
+    transform-origin: calc(100% - 20px) top ;
+    display:none;   
+    right: 0px;
+}
+.header_notify::before{
+    content: "";
+    border-width: 25px 24px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -40px;
+   right: 20px;
+}
+
+
+@keyframes headerNotifyGrow {
+    form {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.header_notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+.header_notify-header h3 {
+    font-size: 15px;
+    padding-left: 10px;
+    line-height: 3;
+    font-weight: 400;
+    user-select: none;
+    color: black;
+    text-align: center;
+
+}
+.header_nav-item--has_header_notify:hover .header_notify {
+    display: block;
+}
+
+.header_notify-list {
+display: inline-block;
+
+}
+.header_notify-item{
+    list-style: none;
+    background-color: rgb(241, 235, 227);
+}
+.header_notify-item :hover {
+   background-color: rgba(168, 201, 202, 0.626);
+   cursor: pointer;
+   color: black;
+}
+
+.header_notify-link{
+    display: flex;
+    text-decoration: none;
+
+}
+.header_notify-img{
+    width: 100px;
+    padding-left: 10px;
+    object-fit: contain;
+}
+.header_notify-info{
+    font-size: 15px;
+    color: black;
+    padding-left: 10px;
+
+}
+.header_notify-name{
+    text-decoration: none;
+
+}
+.header_notify-descriotion{
+    display: block;
+    font-size: 10px;
+    line-height: 2;
+    font-weight: 100;
+    padding-bottom: 14px;
+    color: rgba(0, 0, 0, 0.66);
+}
+.header_notify-footer {
+    text-align: center;
+    background-color: lightcyan;
+
+}
+.header_notifi-footer-btn {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.header_notify-footer :hover {
+    background-color: rgba(169, 244, 93, 0.542);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+} 
+.header_search-button {
+    border: none;
+    height: 27px;
+    width: 40px;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: red;
+    margin-top: 6px;
+    position: absolute;
+    text-align: center;
+    right: 300px;
+    margin-top: 8px;
+}
+.fa-magnifying-glass::before {
+    content: "\f002";
+    color: white;
+    top: 7px;
+    left: 13px;
+    position: absolute;
+    font-size: 15px;
+}
+.fa-cart-shopping::before {
+    content: "\f07a";
+    position: absolute;
+    right: 221px;
+    top: 81px;
+    font-size: 30px;
+    color: white;
+}
+.fa-brands  {
+    content: "";
+    color: aliceblue;
+    
+}
+
+
+
+
+
+
+
+
